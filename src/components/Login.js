@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 const Login = () => {
@@ -67,7 +67,8 @@ const Login = () => {
         <button onClick={getin}>Login</button>
     </form>
     <br /><br />
-    <a href="/signup">Sign Up</a>
+<Link to="/signup">    <span>Sign Up</span> </Link>
+
 </div>
   )
 }
